@@ -1,18 +1,22 @@
 ---
 layout: page
 title: About
-permalink: /about/
 ---
+ I study physics at University of Indonesia and currently working on several web development and data science projects. I am also a RnD guy at UI robotics team. View my resume [here](https://docs.google.com/document/d/1v2QEILcYgqYaE_yI4qGiBH8DPppA4X49Wn-j50j6TOo/edit?usp=sharing). 
+ 
+ This are random stuff what I do mostly
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+- Listening to indie/folk/alternative bands like Fleet Foxes and Bombay Bicycle Club
+- Drawing with tintin like cartoon style
+- Creating web apps with Javascript, React and Redux
+- Randomly walking around campus
+- Teaching orphans and cousins
+- Reading Arstechnica and The Verge
+- Eating various type of kwetiau
+- Completely lost in data science and machine learning
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+ If you have any kind of project you want to talk about, which you think relevant with my background, please contact me at [@eufat](https://www.twitter.com/eufat)
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Merci Beaucoup,
 
-
-[jekyll-organization]: https://github.com/jekyll
+Eufrat Tsaqib
