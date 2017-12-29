@@ -1,9 +1,10 @@
 ---
 layout: page
 title: About
+permalink: /about/
 ---
  I study physics at University of Indonesia and currently working on several web development and data science projects. I am also a RnD guy at UI robotics team. View my resume [here](https://docs.google.com/document/d/1v2QEILcYgqYaE_yI4qGiBH8DPppA4X49Wn-j50j6TOo/edit?usp=sharing). 
- 
+
  This are random stuff what I do mostly
 
 - Listening to indie/folk/alternative bands like Fleet Foxes and Bombay Bicycle Club
