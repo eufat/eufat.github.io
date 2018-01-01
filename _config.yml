@@ -16,7 +16,7 @@
 title: Eufrat Tsaqib
 email: eutsat@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Insights in code and world.
+  Insights on code and world.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: eufat
