@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
- I study physics at University of Indonesia and currently working on several web development and data science projects. I am also previously at UI Robotics Team. View my resume [here](https://docs.google.com/document/d/1v2QEILcYgqYaE_yI4qGiBH8DPppA4X49Wn-j50j6TOo/edit?usp=sharing). 
+ I study physics at University of Indonesia and currently working on several projects. Also I previously one of team member at UI Robotics Team. View my resume [here](https://docs.google.com/document/d/1v2QEILcYgqYaE_yI4qGiBH8DPppA4X49Wn-j50j6TOo/edit?usp=sharing). 
 
  This are random stuff what I do mostly
 
@@ -14,7 +14,7 @@ permalink: /about/
 - Teaching orphans and cousins
 - Reading Arstechnica and The Verge
 - Eating various type of kwetiau
-- Completely lost in data science and machine learning
+- Attending seminar and conference for food
 
  If you have any kind of project you want to talk about, which you think relevant with my background, please contact me at [@eufat](https://www.twitter.com/eufat)
 
