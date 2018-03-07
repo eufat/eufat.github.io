@@ -7,7 +7,7 @@ permalink: /about/
 
  This are random stuff what I do mostly
 
-- Listening to indie/folk/alternative bands like Fleet Foxes and Bombay Bicycle Club
+- Listening to vocally sweet [Co-Donguri Shizuku](https://www.youtube.com/watch?v=ZHwgT9jsGj8) and acoustically natural [Zero Audio Carbo Tenore](https://www.theverge.com/2016/8/29/12688698/zero-audio-carbo-tenore-best-earphones-review).
 - Drawing with tintin like cartoon style
 - Creating web apps with Javascript, React and Redux
 - Randomly walking around campus
