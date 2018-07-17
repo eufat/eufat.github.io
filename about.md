@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I study physics at University of Indonesia and currently working on several projects. Also I previously one of team member at UI Robotics Team. View my resume [here](<(https://eufat.github.io/docs/resume.pdf)>).
+I study physics at University of Indonesia and currently working on several projects. Also I previously one of team member at UI Robotics Team. View my resume [here](https://eufat.github.io/docs/resume.pdf).
 
 This are random stuff what I do mostly
 
