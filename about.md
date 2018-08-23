@@ -8,13 +8,13 @@ I am a student at Universitas Indonesia and currently working on several project
 
 This are random stuff what I do most of the time
 
--   Listening to vocally sweet [Co-Donguri Shizuku](https://www.youtube.com/watch?v=qryPHGGMCfU) and acoustically natural [Zero Audio Carbo Tenore](https://www.theverge.com/2016/8/29/12688698/zero-audio-carbo-tenore-best-earphones-review).
+-   Listening to vocally sweet [Co-Donguri Shizuku](http://www.trdsn.com/eng/discon/product_codonguri.html) and acoustically natural [Zero Audio Carbo Tenore](https://www.theverge.com/2016/8/29/12688698/zero-audio-carbo-tenore-best-earphones-review).
 -   Drawing with tintin like cartoon style
 -   Creating web apps with Javascript, React and Redux
 -   Randomly walking around campus
 -   Teaching orphans and cousins
--   Reading Arstechnica and The Verge
--   Eating various type of kwetiau
+-   Reading [Arstechnica](https://arstechnica.com/) and [The Verge](theverge.com)
+-   Eating various type of [kwetiau](https://en.wikipedia.org/wiki/Shahe_fen)
 -   Attending seminar and conference for food
 -   Tweeting unnecessary things [@eufat](https://www.twitter.com/eufat)
 
