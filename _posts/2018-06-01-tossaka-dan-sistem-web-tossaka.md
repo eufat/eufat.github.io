@@ -59,7 +59,7 @@ TOSSAKA adalah acara yang dibuat oleh mahasiswa sains, jadi seharusnya data dan 
 ![data-tossaka-5](https://eufat.github.io/images/data-tossaka-5.png)
 *Distribusi tipe ujian IPA vs IPS*
 
-All in all, TOSSAKA merupakan event yang cukup besar dan untuk membuat event berjalan lancar dan sukses dibutuhkan kerja keras. Manfaat dari tryout adalah mendidik adik-adik yang masih duduk di bangku SMA untuk memotivasi mereka lebih giat belajar, lebih cerdas dan nantinya memberikan menjadi manusia yang lebih berkualitas. Untuk aku pribadi membuat sistem web TOSSAKA adalah sebuah kesenangan dan kebanggaan tersendiri, karena sudah digunakan 9 ribu orang lebih dan menghasilkan gross revenue lebih dari 280 juta rupiah.
+All in all, TOSSAKA merupakan event yang cukup besar dan untuk membuat event berjalan lancar dan sukses dibutuhkan kerja keras. Manfaat dari tryout adalah mendidik adik-adik yang masih duduk di bangku SMA untuk memotivasi mereka lebih giat belajar, lebih cerdas dan nantinya menjadi manusia yang lebih berkualitas. Untuk aku pribadi membuat sistem web TOSSAKA adalah sebuah kesenangan dan kebanggaan tersendiri, karena sudah digunakan 9 ribu orang lebih dan menghasilkan gross revenue lebih dari 280 juta rupiah.
 
 Terimakasih sudah membaca.
 
