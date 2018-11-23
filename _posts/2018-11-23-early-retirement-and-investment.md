@@ -48,7 +48,7 @@ In the world where we rushing to consume more not giving more, it also creates a
 
 While producing more mean is instead of using software for example, try to create one. Instead of listening to music, try to compose one. Instead of hiring a handyman to build an sofa, try to build by yourself. Instead to learn from lectures, try to create your own curriculum. There's a lot of this world that we can do if we has effort to do so.
 
-![american-psycho](https://eufat.github.io/images/american-psycho)
+![american-psycho](https://eufat.github.io/images/american-psycho.jpg)
 *A scene from American Psycho when Christian Bale as Bateman murder his associates just because a single business card*
 
 I've never been like filthy rich consumer, but I think movies like [Scarface](https://www.imdb.com/title/tt0086250/), [American Psycho](https://www.imdb.com/title/tt0144084/), [The Family Man](https://www.imdb.com/title/tt0218967/) and [Wall Street](https://www.imdb.com/title/tt0094291/) could teach you something.
