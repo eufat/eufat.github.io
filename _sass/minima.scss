@@ -1,19 +1,29 @@
 @charset "utf-8";
 // Define defaults for each variable.
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('/fonts/HKGrotesk-Bold.woff2') format('woff2'),
+        url('/fonts/HKGrotesk-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
 
-$base-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$head-font-family: "Open Sans", Helvetica, Arial, sans-serif !default;
-$base-font-size:   15px !default;
+
+
+$base-font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$head-font-family: "HK Grotesk", Helvetica, Arial, sans-serif !default;
+$base-font-size:   16px !default;
 $base-font-weight: 400 !default;
+$head-font-weight: bold !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.4 !default;
 
 $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
-$background-color: #fdfdfd !default;
-$brand-color:      #2a7ae2 !default;
+$background-color: #fff !default;
+$brand-color:      #0460f7 !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
