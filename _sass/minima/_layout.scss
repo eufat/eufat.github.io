@@ -187,12 +187,12 @@
 
 .post-title {
   font-family: $head-font-family;
-  @include relative-font-size(2.625);
+  @include relative-font-size(2);
   letter-spacing: -1px;
   line-height: 1;
 
   @include media-query($on-laptop) {
-    @include relative-font-size(2.25);
+    @include relative-font-size(1.5);
   }
 }
 
@@ -201,10 +201,10 @@
 
   h2 {
     margin-top: 30px;
-    @include relative-font-size(2);
+    @include relative-font-size(1.8);
 
     @include media-query($on-laptop) {
-      @include relative-font-size(1.75);
+      @include relative-font-size(1.5);
     }
   }
 
