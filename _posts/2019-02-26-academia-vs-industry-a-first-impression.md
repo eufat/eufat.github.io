@@ -2,7 +2,7 @@
 title: "Academia vs Industry: A Biased First Impression"
 ---
 
-I currently work on both academia as a student that view how lecturer/researcher work and industry where I work part-time in a startup as an engineer work with relatively small team. In my opinion currently , the industry has better offering than academia in many ways.
+I currently work on both academia as a student that view how lecturer/researcher work and industry where I work part-time in a startup as an engineer with relatively small team. In my opinion currently , the industry has better offerings than academia in many ways.
 
 Academia
 - Evaluation driven work (ex: paper reviews, examination etc)
