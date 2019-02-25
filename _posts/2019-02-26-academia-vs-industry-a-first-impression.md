@@ -6,7 +6,7 @@ I currently work on both academia as a student that view how lecturer/researcher
 
 Academia
 - Evaluation driven work (ex: paper reviews, examination etc)
-- Too much bullshit on paper formattings, forms etc
+- Too much bullshit on paper formattings, forms etc 
 - No financial freedom, since money is a limited alms from institutions
 - Lower motivation, since the resources are not fluctuating
 - The ego of staff is high since they have full ownership of their work
