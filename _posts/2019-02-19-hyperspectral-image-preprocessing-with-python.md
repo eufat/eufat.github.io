@@ -2,7 +2,7 @@
 title: Hyperspectral Image Preprocessing with Python
 ---
 
-This is the preliminary prerequisites you need if you want to build a preprocessing system using Python.
+This is the preliminary prerequisites you need if you want to build a hyperspectral preprocessing system using Python.
 
 - Anaconda
 - SpectralPy
@@ -28,12 +28,16 @@ white_nparr = np.array(white_ref.load())
 dark_nparr = np.array(dark_ref.load())
 data_nparr = np.array(data_ref.load())
 ```
-Using correction formula, the captured data is subtracted by dark reference and divided with white reference subtracted dark reference.
+Using correction formula, the captured data is subtracted by dark reference and divided with white reference subtracted dark reference. To show our currently corrected image, use imshow.
 ```python
 corrected_nparr = np.divide(
     np.subtract(data_nparr, dark_nparr),
     np.subtract(white_nparr, dark_nparr))
+
+imshow(corrected_nparr, (100, 100, 100))
 ```
+![corrected-image](https://eufat.github.io/images/hyperspectral-preprocessing-1.png)
+
 With this [file](https://raw.githubusercontent.com/eufat/skripsi/master/notebooks/helpers/bands.csv) that represent each value of spectral bands we can display each pixel spectral features as figured with reflectance versus wavelength.
 ```python
 bands = np.genfromtxt('bands.csv', delimiter=',')
@@ -57,7 +61,9 @@ plt.xlabel('Wavelength')
 plt.ylabel('Reflectance')
 plt.show()
 ```
-To acquire ROI that we will use for processing phase (training phase) we can extract the ROI by using bounding box method.
+![leaf-spectral](https://eufat.github.io/images/hyperspectral-preprocessing-2.png)
+
+To acquire ROI that we will use for processing phase (training phase) we can extract the ROI by using bounding box method. Let's build a function that do that.
 ```python
 def extract_roi(arr, x, y, w, h, intensity, line):
     roi = arr[y:y+h, x:x+w, :]
@@ -69,7 +75,9 @@ def extract_roi(arr, x, y, w, h, intensity, line):
     bounding_box[y:y+h, x+w:x+w+line, :] = intensity # garis kanan
 
     return (roi, bounding_box)
-
+```
+Next, we need the coordinates that define where the bounding boxes belong.
+```python
 coordinates = [
     (105, 65),
     (120, 60),
@@ -77,7 +85,9 @@ coordinates = [
     (215, 65),
     (265, 65),
     (320, 50)]
+```
 
+```python
 rois = [] # returned ROIs
 length = 50 # width and height
 intensity = 2 # bounding box line intensity
@@ -92,7 +102,9 @@ for coordinate in coordinates:
 
 imshow(bounding_boxed, (100, 100, 100))
 ```
-Finally, to get the averaged spectral features in each boxes we could `np.mean()` function.
+![bounding-boxed](https://eufat.github.io/images/hyperspectral-preprocessing-3.png)
+
+Finally, to get the averaged spectral features in each boxes we could use the `np.mean()` function.
 ```python
 for i in range(len(rois)):
     roi = rois[i]
@@ -106,4 +118,11 @@ plt.title('Leaf Spectral Footprint\n Mean in ROI Area')
 plt.xlabel('Wavelength (nm)')
 plt.ylabel('Reflectance')
 plt.show()
+```
+![bounding-boxed](https://eufat.github.io/images/hyperspectral-preprocessing-4.png)
+
+Now we are finished with a `rois` variable that we can save as `.npy`, with this data we can continue to the processing phase.
+
+```
+np.save("rois.npy", rois)
 ```
