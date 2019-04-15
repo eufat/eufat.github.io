@@ -1,5 +1,5 @@
 ---
-title: "Nodeflux Internship: 1st Vision AI Company in Indonesia"
+title: "Nodeflux Internship"
 ---
 
 Pada liburan semester enam ke tujuh, aku diwajibkan mengambil praktek kerja. Umumnya dari teman-teman di fisika instrumentasi mengambil praktek kerja di LIPI, BPPT, BATAN, dan institusi-institusi riset negara lainnya. Namun, aku ingin mencari pengalaman di perusahaan teknologi yang menyangkut computer vision. Kenapa computer vision? karena, nantinya skripsiku akan diarahkan kesana dan ada salah satu projectku yang sudah didanai DIIB UI dan RISTEKDIKTI berkutat dengan computer vision pula. Jadi kalau skripsi, internship dan project bisa satu arah, kenapa tidak?
