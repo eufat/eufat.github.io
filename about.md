@@ -4,15 +4,15 @@ title: About Eufrat
 permalink: /about/
 ---
 
-I currently work as a Software Engineer at [Nodeflux](http://nodeflux.io). I am interested in both designing and developing modern web, computer
-vision and AI products. I've created both hardware and software products for the sake of fun and making money at the same time. 
+I currently work as a Software Engineer at [Nodeflux](http://nodeflux.io). I am interested in both 
+**designing and developing modern web, computer vision and AI** products. I've created both hardware and software products for the sake of fun and making money at the same time. 
 If you interested in experience and contact details, please consider to view my résumé [here](/docs/resume.pdf). 
 
-I live in Indonesia (yes, you know, it's the country of Bali) I do love cycling, writing and tinkering too. I find myself in making value
-with the help of sophisticated tools to advance human being forward. 
+I live in Indonesia (yes, you know, it's the country of Bali) I do love cycling, writing and tinkering too. I believe in **making value**
+with the help of sophisticated tools **to move human being and nature forward**. 
 
 
-A picture is worth a thousand words they said, so here it comes
+A picture is worth a thousand words they said, so here it is some glimpse of what I did
 
 | | | |
 |:-------------------------:|:-------------------------:|:-------------------------:|
