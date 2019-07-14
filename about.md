@@ -11,6 +11,9 @@ If you interested in experience and contact details, please consider to view my 
 I live in Indonesia (yes, you know, it's the country of Bali) I do love cycling, writing and tinkering too. I believe in **making value**
 with the help of sophisticated tools **to move human being and nature forward**. 
 
+&nbsp;
+&nbsp;
+&nbsp;
 
 A picture is worth a thousand words they said, so here it is some glimpse of what I did
 
