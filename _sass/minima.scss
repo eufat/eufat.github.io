@@ -1,6 +1,6 @@
 @charset "utf-8";
 // Define defaults for each variable.
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 @font-face {
     font-family: 'HK Grotesk';
     src: url('/fonts/HKGrotesk-Bold.woff2') format('woff2'),
@@ -11,7 +11,7 @@
 
 
 
-$base-font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $head-font-family: "HK Grotesk", Helvetica, Arial, sans-serif !default;
 $base-font-size:   18px !default;
 $base-font-weight: 400 !default;
