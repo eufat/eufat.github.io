@@ -1,41 +1,48 @@
 @charset "utf-8";
+
 // Define defaults for each variable.
-@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 @font-face {
-    font-family: 'HK Grotesk';
-    src: url('/fonts/HKGrotesk-Bold.woff2') format('woff2'),
-        url('/fonts/HKGrotesk-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Inter Regular";
+  src: url("/fonts/Inter-Regular.woff2") format("woff2"),
+    url("/fonts/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "Inter Medium";
+  src: url("/fonts/Inter-Medium.woff2") format("woff2"),
+    url("/fonts/Inter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
 
-
-$base-font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$head-font-family: "HK Grotesk", Helvetica, Arial, sans-serif !default;
-$base-font-size:   18px !default;
+$base-font-family: "Inter Regular", "Helvetica Neue", Helvetica, Arial,
+  sans-serif !default;
+$head-font-family: "Inter Medium", Helvetica, Arial, sans-serif !default;
+$base-font-size: 16px !default;
 $base-font-weight: 400 !default;
-$head-font-weight: bold !default;
-$small-font-size:  $base-font-size * 0.9 !default;
+$head-font-weight: 500 !default;
+$small-font-size: $base-font-size * 0.9 !default;
 $base-line-height: 1.4 !default;
 
-$spacing-unit:     30px !default;
+$spacing-unit: 30px !default;
 
-$text-color:       #111 !default;
+$text-color: #111 !default;
 $background-color: #fff !default;
-$brand-color:      #0460f7 !default;
+$brand-color: #0460f7 !default;
 
-$grey-color:       #828282 !default;
+$grey-color: #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-color-dark: darken($grey-color, 25%) !default;
 
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    960px !default;
+$content-width: 960px !default;
 
-$on-palm:          800px !default;
-$on-laptop:        960px !default;
+$on-palm: 800px !default;
+$on-laptop: 960px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -55,8 +62,4 @@ $on-laptop:        960px !default;
 }
 
 // Import partials.
-@import
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting"
-;
+@import "minima/base", "minima/layout", "minima/syntax-highlighting";
