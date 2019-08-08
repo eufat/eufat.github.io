@@ -37,6 +37,13 @@ body {
   font-kerning: normal;
 }
 
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
