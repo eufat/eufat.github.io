@@ -4,7 +4,7 @@ title: About Eufrat
 permalink: /about/
 ---
 
-
+![profile-photo](https://eufat.github.io/images/eufrat.jpg)
 
 I currently work as a Software Engineer at [Nodeflux](http://nodeflux.io) and organizing [Cloud Native Indonesia](https://github.com/cloudnative-id/meetups).
 
