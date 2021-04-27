@@ -9,17 +9,12 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Inter Medium";
-  src: url("/fonts/Inter-Medium.woff2") format("woff2"),
-    url("/fonts/Inter-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
 
 $base-font-family: "Inter Regular", "Helvetica Neue", Helvetica, Arial,
   sans-serif !default;
-$head-font-family: "Inter Medium", Helvetica, Arial, sans-serif !default;
+$head-font-family: "DM Sans", Helvetica, Arial, sans-serif !default;
 $base-font-size: 16px !default;
 $base-font-weight: 400 !default;
 $head-font-weight: 500 !default;
