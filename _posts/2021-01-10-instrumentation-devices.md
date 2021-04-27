@@ -1,5 +1,5 @@
 ---
-title: "Transducer, Micro Electro Mechanical system (MEMS) and DC Motor Operation"
+title: "Transducer, MEMS and DC Motor Operation"
 ---
 
 
