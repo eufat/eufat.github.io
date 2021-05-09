@@ -37,7 +37,7 @@ Lokasi Spasial maksudnya adalah letak darimana berasal sumber suara tersebut. Ka
 ## 3. Bentuknya
 Kenapa gitu, harus bentuk daun telinganya begitu, padahalkan bolongannya (*ear canal*) kecil? kan aneh gitu bentuknya, "ga jelas", kenapa bentuknya gak segitiga gitu, atau kenapa tidak seperti elven aja gitu tajem keatas ? (supaya keren haha).
 
-![bentuk kuping](https://qph.ec.quoracdn.net/main-qimg-3eba121a1b99256cd3396ba0c5429318-c)
+![bentuk kuping](https://eufat.github.io/images/ear-1.jpg)
 
 Bentuk telinga yang seperti kerucut berguna untuk mengamplifikasi suara mid dan high dari luar, agar lebih besar terdengar. Bentuk telinga yang aneh itu juga berguna untuk memproses secara mekanika gelombang seperti frekuensi, spektrum, dan amplitudonya. Kegunaan utama lainnya juga agar kita dapat melokalisasi dimana sumber suara itu berasal, karena bentuknya seperti itu kita bisa tahu kenapa ada suara dari atas, dari bawah, dari depan maupun dari belakang. Ada sebuah metode yang sangat keren untuk merekam suara secara nyata menggunakan silika layaknya kuping sebenarnya, ialah [Binaural](https://www.youtube.com/watch?v=Yd5i7TlpzCk). Binaural memanfaatkan silika bentuk kuping sebenernya untuk menciptakan suara yang dapat di-*pinpoint* oleh telinga kita jauh lebih baik Dolby 5.1, 7.2, Atmos teknologi surrond lainnya. Kamu juga bisa merasakan betapa bagusnya musik yang direkam secara binaural seperti video dibawah ini:
 
