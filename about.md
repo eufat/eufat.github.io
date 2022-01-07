@@ -4,7 +4,7 @@ title: About Eufrat
 permalink: /about/
 ---
 
-![profile-photo](https://eufat.github.io/images/eufrat.jpg)
+![profile-photo](https://eufat.github.io/images/about.png)
 
 I currently works on AI/ML at [LinkAja](https://www.linkaja.id) and also organizing [Cloud Native Indonesia](https://github.com/cloudnative-id/meetups).
 
