@@ -4,9 +4,10 @@ title: Hyperspectral Image Preprocessing with Python
 
 This is the preliminary prerequisites you need if you want to build a hyperspectral preprocessing system using Python.
 
+- [Knowledge of hyperspectral imaging](https://www.microimages.com/documentation/Tutorials/hyprspec.pdf)
 - Anaconda
 - SpectralPy
-- RAW and HDR file from hyperspectral camera
+- RAW and HDR file from hyperspectral camera (in this post using [Specim FX-10](https://www.specim.fi/downloads/Specim-FX10-Technical-Datasheet-01.pdf))
 
 As usual we import the required modules, we use spectral library for opening files, numpy for numerical processing and matplotlib for visualization.
 ```python
@@ -16,7 +17,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib
 ```
-Using `envi.open()` function we open both RAW and HDR file, we need three type of data here: dark reference, white reference and data capture.
+Using `envi.open()` function we open both RAW and HDR file, we need three type of data here: dark reference, white reference and data capture. In my experiment I use [Specim FX-10](https://www.specim.fi/downloads/Specim-FX10-Technical-Datasheet-01.pdf) hyperspectral camera, that produce this results ([dark reference](https://github.com/eufat/skripsi/tree/master/datasets/bisbul/DARK_REF_2/capture) and [white reference](https://github.com/eufat/skripsi/tree/master/datasets/bisbul/WHITE_REF_2/capture)).
 ```python
 dark_ref = envi.open('path/to/dark_reference.hdr', 'path/to/dark_reference.raw')
 white_ref = envi.open('path/to/white_reference.hdr', 'path/to/white_reference.raw')
@@ -28,7 +29,7 @@ white_nparr = np.array(white_ref.load())
 dark_nparr = np.array(dark_ref.load())
 data_nparr = np.array(data_ref.load())
 ```
-Using correction formula, the captured data is subtracted by dark reference and divided with white reference subtracted dark reference. To show our currently corrected image, use imshow.
+Using [correction formula](https://en.wikipedia.org/wiki/Flat-field_correction), the captured data is subtracted by dark reference and divided with white reference subtracted dark reference. To show our currently corrected image, use imshow from spectral library.
 ```python
 corrected_nparr = np.divide(
     np.subtract(data_nparr, dark_nparr),
@@ -38,7 +39,7 @@ imshow(corrected_nparr, (100, 100, 100))
 ```
 ![corrected-image](https://eufat.github.io/images/hyperspectral-preprocessing-1.png)
 
-With this [file](https://raw.githubusercontent.com/eufat/skripsi/master/notebooks/helpers/bands.csv) that represent each value of spectral bands we can display each pixel spectral features as figured with reflectance versus wavelength.
+Since hyperspectral camera have a lot of bands (commonly called channels in RGB image, bands contain a list of wavelength measured in nanometer) within a single image we can create a figure where we can plot a reflectance versus the bands itself. With this [file](https://raw.githubusercontent.com/eufat/skripsi/master/notebooks/helpers/bands.csv) that represent each value of spectral bands we can display each pixel spectral features as figured with reflectance versus wavelength.
 ```python
 bands = np.genfromtxt('bands.csv', delimiter=',')
 ```
@@ -63,16 +64,16 @@ plt.show()
 ```
 ![leaf-spectral](https://eufat.github.io/images/hyperspectral-preprocessing-2.png)
 
-To acquire ROI that we will use for processing phase (training phase) we can extract the ROI by using bounding box method. Let's build a function that do that.
+The ROIs (region of interests) coordinate is the coordinate where you want to select a certain object within an image, for example, in my case I select the leaf and board objects. The coordinate itself is top-left of a bounding box, measured in pixels. To acquire ROI that we will use for processing phase (training phase) we can extract the ROI by using bounding box method. Let's build a function that do that.
 ```python
-def extract_roi(arr, x, y, w, h, intensity, line):
+def extract_roi(arr, x, y, w, h, line):
     roi = arr[y:y+h, x:x+w, :]
 
     bounding_box = arr
-    bounding_box[y-line:y, x-line:x+w+line, :] = intensity # garis atas
-    bounding_box[y:y+h, x-line:x, :] = intensity # garis kiri
-    bounding_box[y+h:y+h+line, x-line:x+w+line, :] = intensity # garis bawah
-    bounding_box[y:y+h, x+w:x+w+line, :] = intensity # garis kanan
+    bounding_box[y-line:y, x-line:x+w+line, :] = intensity # top line
+    bounding_box[y:y+h, x-line:x, :] = intensity # left line
+    bounding_box[y+h:y+h+line, x-line:x+w+line, :] = intensity # bottom line
+    bounding_box[y:y+h, x+w:x+w+line, :] = intensity # right line
 
     return (roi, bounding_box)
 ```
@@ -82,22 +83,18 @@ coordinates = [
     (105, 65),
     (120, 60),
     (160, 65),
-    (215, 65),
-    (265, 65),
-    (320, 50)]
 ```
 
 ```python
 rois = [] # returned ROIs
 length = 50 # width and height
-intensity = 2 # bounding box line intensity
-line = 0 # bounding box line width
+line = 1 # bounding box line width, you can increase the line the see bounding box clearer
 bounding_boxed = corrected_nparr
 
 for coordinate in coordinates:
     (x, y) = coordinate
     (roi, bounding_boxed) = extract_roi(
-        bounding_boxed, x, y, length, length, intensity, line)
+        bounding_boxed, x, y, length, length, line)
     rois.append(roi)
 
 imshow(bounding_boxed, (100, 100, 100))
