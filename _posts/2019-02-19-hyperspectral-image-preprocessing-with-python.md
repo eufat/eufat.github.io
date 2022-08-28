@@ -66,7 +66,7 @@ plt.show()
 
 The ROIs (region of interests) coordinate is the coordinate where you want to select a certain object within an image, for example, in my case I select the leaf and board objects. The coordinate itself is top-left of a bounding box, measured in pixels. To acquire ROI that we will use for processing phase (training phase) we can extract the ROI by using bounding box method. Let's build a function that do that.
 ```python
-def extract_roi(arr, x, y, w, h, line):
+def extract_roi(arr, x, y, w, h, intensity, line):
     roi = arr[y:y+h, x:x+w, :]
 
     bounding_box = arr
@@ -82,19 +82,21 @@ Next, we need the coordinates that define where the bounding boxes belong.
 coordinates = [
     (105, 65),
     (120, 60),
-    (160, 65),
+    (160, 65)
+]
 ```
 
 ```python
 rois = [] # returned ROIs
 length = 50 # width and height
-line = 1 # bounding box line width, you can increase the line the see bounding box clearer
+line = 0 # bounding box line width
 bounding_boxed = corrected_nparr
+intensity = 2 # bounding box line intensity
 
 for coordinate in coordinates:
     (x, y) = coordinate
-    (roi, bounding_boxed) = extract_roi(
-        bounding_boxed, x, y, length, length, line)
+    (roi, bounding_boxed) = extract_rois(
+        bounding_boxed, x, y, length, length, intensity, line)
     rois.append(roi)
 
 imshow(bounding_boxed, (100, 100, 100))
