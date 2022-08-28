@@ -90,16 +90,16 @@ coordinates = [
 rois = [] # returned ROIs
 length = 50 # width and height
 line = 0 # bounding box line width
-bounding_boxed = corrected_nparr
 intensity = 2 # bounding box line intensity
+image_bboxed = None
 
 for coordinate in coordinates:
     (x, y) = coordinate
-    (roi, bounding_boxed) = extract_rois(
-        bounding_boxed, x, y, length, length, intensity, line)
+    (roi, image_bboxed) = extract_rois(
+        corrected_nparr, x, y, length, length, intensity, line)
     rois.append(roi)
 
-imshow(bounding_boxed, (100, 100, 100))
+imshow(image_bboxed, (100, 100, 100))
 ```
 ![bounding-boxed](https://eufat.github.io/images/hyperspectral-preprocessing-3.png)
 
